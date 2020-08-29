@@ -1,7 +1,7 @@
 import requests, argparse, time
 import threading
 
-parser =  argparse.ArgumentParser (description = "Example: python3 script.py 13371337 1")
+parser =  argparse.ArgumentParser (description = "python3 script.py o53wfysfq 2")
 parser.add_argument ("id", help = "https://strawpoll.com/o53wfysfq")
 parser.add_argument ("option", help = "Poll checkbox number (2)")
 
