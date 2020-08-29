@@ -2,8 +2,8 @@ import requests, argparse, time
 import threading
 
 parser =  argparse.ArgumentParser (description = "Example: python3 script.py 13371337 1")
-parser.add_argument ("id", help = "strawpoll.me poll ID")
-parser.add_argument ("option", help = "Poll checkbox number (1 for 1st option, 2 for 2nd, ...)")
+parser.add_argument ("id", help = "https://strawpoll.com/o53wfysfq")
+parser.add_argument ("option", help = "Poll checkbox number (2)")
 
 parser.add_argument ("-f", help = "Voting frequency (in ms) (Default: 200ms)")
 parser.add_argument ("-m", help = "Max threads (Default: 16)")
@@ -47,7 +47,7 @@ def prepare (args, motd):
 		opt = int (args.option)
 	except:
 		print ("Invalid option: '{}'. Must be a number: 1 for 1st option, 2 for 2nd, ...".format (args.option))
-		exit (1)
+		exit (2)
 
 	if (args.f == None):
 		freq = 0.2
